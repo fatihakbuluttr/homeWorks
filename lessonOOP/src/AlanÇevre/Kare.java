@@ -2,15 +2,22 @@ package AlanÇevre;
 
 public class Kare extends BaseClass{
 
+    int birinci_kenar;
+
+    public Kare(int birinci_kenar) {
+        this.birinci_kenar = birinci_kenar;
+    }
     @Override
-    public double alan(double kenarUzunluk, double digerKenar) {
-        double alanHesapla=digerKenar*kenarUzunluk;
-        return alanHesapla;
+    public int alan() {
+       int kare_alan=birinci_kenar*birinci_kenar;
+       return kare_alan;
     }
 
     @Override
-    public double cevre(double kenarUzunluk, double digerKenar) {
-        double cevreHesapla=4*kenarUzunluk;
-        return cevreHesapla;
+    public int cevre() {
+        int kare_cevre=4*birinci_kenar;
+        return kare_cevre;
     }
+
+
 }

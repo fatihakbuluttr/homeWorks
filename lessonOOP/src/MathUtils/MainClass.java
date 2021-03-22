@@ -1,11 +1,25 @@
 package MathUtils;
 
 public class MainClass {
-    public static void main(String[] args) {
-        MathUtils islem = new MathUtils();
 
-        System.out.println("Sayının karesi: " + islem.karesiniAl(5));
-        System.out.println("Sayıyının beş ile çarpımı : " + islem.sayiyiBesIleCarp(10));
-        System.out.println("Üç Sayının ortalaması : " + islem.ortalamasiniAl(5, 6, 10));
+    /*
+MathUtils adinda bir sinif olusturunuz ve bu sinifta
+karesiniAl, sayiyiBesIleCarp ve girilen 3 sayinin
+ortalamasiniAl metotlari olusturunuz, bu metotlari
+MainClass da nesne olusturmadan kullaniniz.
+ */
+
+    public static void main(String[] args) {
+
+        int kareAl = MathUtils.karesiniAl(5);
+        System.out.println("Sayının karesi: " + kareAl);
+
+        int besleCarp=MathUtils.sayiyiBesIleCarp(6);
+        System.out.println("Sayıyının beş ile çarpımı : " + besleCarp);
+
+        double ortalama=MathUtils.ortalamasiniAl(10,15,20);
+        System.out.println("Üç Sayının ortalaması : " + ortalama);
+
+
     }
 }

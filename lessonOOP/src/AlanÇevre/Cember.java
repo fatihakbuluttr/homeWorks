@@ -2,18 +2,24 @@ package AlanÇevre;
 
 public class Cember extends BaseClass{
 
-    @Override
-    public double alan(double kenarUzunluk,double digerKenar) {
-        double alanHesapla=3.14*kenarUzunluk*kenarUzunluk;
+    double yaricap;
 
-        return alanHesapla;
-
+    public Cember(int yaricap) {
+        this.yaricap = yaricap;
     }
 
     @Override
-    public double cevre(double kenarUzunluk, double digerKenar) {
-        double cevreHesapla=2*3.14*kenarUzunluk;
-        
-        return cevreHesapla;
+    public int alan() {
+        double cember_alan=3.14*yaricap*yaricap;
+        int cember_alan_int= (int) cember_alan;
+        return cember_alan_int;
+    }
+
+    @Override
+    public int cevre() {
+        double cember_cevre=2*3.14*yaricap;
+        int cember_cevre_int= (int) cember_cevre;
+        return cember_cevre_int;
     }
 }
+

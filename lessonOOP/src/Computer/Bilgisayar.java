@@ -1,14 +1,24 @@
 package Computer;
 
 public class Bilgisayar {
-    public int ram;
-    public String islemci;
+    private String isim;
+    private int ram;
+    private String islemci;
     public int ekranBuyuklugu;
 
-    public Bilgisayar(int ram, String islemci, int ekranBuyuklugu) {
+    public Bilgisayar(String isim, int ram, String islemci, int ekranBuyuklugu) {
+        this.isim = isim;
         this.ram = ram;
         this.islemci = islemci;
         this.ekranBuyuklugu = ekranBuyuklugu;
+    }
+
+    public int getEkranBuyuklugu() {
+        return ekranBuyuklugu;
+    }
+
+    public String getIsim() {
+        return isim;
     }
 }
 

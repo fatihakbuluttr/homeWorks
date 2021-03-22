@@ -1,18 +1,24 @@
 package AlanÇevre;
 
 public class Dikdortgen extends BaseClass {
-    @Override
-    public double alan(double kenarUzunluk, double digerKenar) {
-        double alanHesapla = digerKenar * kenarUzunluk;
-        return alanHesapla;
+   int birinci_kenar;
+   int ikinci_kenar;
+
+    public Dikdortgen(int birinci_kenar, int ikinci_kenar) {
+        this.birinci_kenar = birinci_kenar;
+        this.ikinci_kenar = ikinci_kenar;
     }
 
     @Override
-    public double cevre(double kenarUzunluk, double digerKenar) {
-        double cevreHesapla = 2* (kenarUzunluk+digerKenar);
-        return cevreHesapla;
+    public int alan() {
+       int dikdortgen_alan=birinci_kenar*ikinci_kenar;
+       return dikdortgen_alan;
+    }
 
-
+    @Override
+    public int cevre() {
+        int dikdortgen_cevre=2*(birinci_kenar+ikinci_kenar);
+        return dikdortgen_cevre;
     }
 }
 
